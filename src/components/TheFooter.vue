@@ -1,21 +1,20 @@
 <template>
-  <footer class="wrapper">
-    <div class="footer-container">
-      <div class="footer-container__social-container">
-        <div
+  <div class="wrapper">
+    <footer class="footer">
+      <ul class="social-media">
+        <li
           v-for="(item, index) in networks"
           :key="index"
-          class="social-network"
-        >
+          class="social-media__item">
           <a :href="item.link" target="_blank">{{ item.name }}</a>
-        </div>
+        </li>
+      </ul>
+      <div class="copyright">
+        <p class="copyright__location">Guayaquil, Ecuador</p>
+        <p class="copyright__signature">2022, DEVELOPED BY LUIS REYES</p>
       </div>
-      <div class="footer-container__copyright-container">
-        <p class="location">Guayaquil, Ecuador</p>
-        <p class="signature">2022, DEVELOPED BY LUIS REYES</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </template>
 
 <script>
